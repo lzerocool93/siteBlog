@@ -1,0 +1,166 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    color:#606060;
+}
+
+a:hover{
+    color:#339933;
+}
+a, a:visited{
+    color:#339933;
+}
+
+
+header{
+    background:#292929;
+}
+
+.centerBlockMain{
+    margin: 0 auto;
+    max-width:990px;
+    overflow:hidden;
+}
+.logo{
+    float: left;
+    margin-top: 45px;
+}
+.menuTop{
+    float:right;
+}
+.menuTop li{
+    float: left;
+    font-weight: 600;
+}
+.menuTop li a{
+    color:#fff;
+    display: block;
+    text-decoration: none;
+    padding: 50px 35px;
+    border-bottom: 3px solid transparent;
+}
+.menuTop li a:hover{
+    color:#58c93a;
+    border-bottom: 3px solid #58c93a;
+}
+
+
+main{
+    float:left;
+    width:62.5%;
+    margin-top:70px;
+    
+}
+
+article{
+    margin-bottom: 70px;
+}
+article>header{
+    font-size: 0;
+    background: none;
+    margin-bottom: 10px;
+}
+article>h2{
+    font-size:1.75em;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.1;
+    margin:0 0 40px 20px;
+    color:#4f4e4e;
+    
+}
+article>p{
+    margin: 0 0 20px 20px;
+}
+aside{
+    float:right;
+    width:28.3%;
+    margin-top:70px;
+    
+}
+a.more{
+    border:2px solid #c2c2c2;
+    color:#c2c2c2;
+    padding: 7px 20px;
+    display: inline-block;
+    border-radius: 20px;
+}
+a.more:hover{
+    color:#339933;
+    border-color:#339933;
+}
+
+.widget{
+    margin-bottom: 50px;
+}
+.widget h2{
+    text-transform: uppercase;
+    color:#6c6969;
+    font-weight: bold;
+    background: #f8f8f8;
+    border-left:2px solid #58c93a;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.search{
+    color:#b9b9b9;
+    font-size:0.75em;
+    width: 100%;
+    border:1px solid #e1e0e0;
+    padding: 10px 15px;
+}
+
+.widget>nav{
+    margin: 0 0 0 20px;
+}
+.subscribe{
+    position: relative;
+    width: 100%;
+    height: 48px;
+}
+.subscribeInput{
+    color:#b9b9b9;
+    font-size:0.75em;
+    width: 100%;
+    border:1px solid #e1e0e0;
+    padding: 15px 50px 15px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.subscribeImg{
+    position:absolute;
+    right:20px;
+    top:12px;
+}
+.pager{
+    border-top:1px solid #e1e0e0;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 30px 30px;
+}
+.pager a{
+    color:#818181;
+    text-decoration: none;
+}
+.pager a:hover{
+    text-decoration: underline;
+}
+.previousLink{
+    float:left;
+}
+.nextLink{
+    float:right;
+}
+
+footer{
+    background: #f8f8f8;
+    border-top:1px solid #e1e0e0;
+    text-align: center;
+    font-size:0.8125em;
+    padding: 50px 0;
+}
+footer img{
+    margin-bottom:20px;
+}
