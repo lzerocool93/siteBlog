@@ -43,7 +43,10 @@ header{
     border-bottom: 3px solid #58c93a;
 }
 
-
+.content{
+    border-right: 1px solid #e1e0e0;
+    border-left: 1px solid #e1e0e0;
+}
 main{
     float:left;
     width:62.5%;
@@ -58,7 +61,26 @@ article>header{
     font-size: 0;
     background: none;
     margin-bottom: 10px;
+    position: relative;
 }
+.publish{
+    font-size: 13px;
+    background: rgba(0,0,0,.5);
+    color:#fff;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    transition:bottom 0.5s linear;
+    display: none;
+    
+}
+article>header:hover .publish{
+    
+    display: block;
+}
+
 article>h2{
     font-size:1.75em;
     text-transform: uppercase;
@@ -71,6 +93,7 @@ article>h2{
 article>p{
     margin: 0 0 20px 20px;
 }
+
 aside{
     float:right;
     width:28.3%;
@@ -83,6 +106,8 @@ a.more{
     padding: 7px 20px;
     display: inline-block;
     border-radius: 20px;
+    text-decoration: none;
+    transition:all 0.1s linear;
 }
 a.more:hover{
     color:#339933;
@@ -107,6 +132,7 @@ a.more:hover{
     width: 100%;
     border:1px solid #e1e0e0;
     padding: 10px 15px;
+    border-right:0;
 }
 
 .widget>nav{
@@ -127,6 +153,7 @@ a.more:hover{
     position: absolute;
     top:0;
     left:0;
+    border-right:0;
 }
 .subscribeImg{
     position:absolute;
@@ -163,4 +190,38 @@ footer{
 }
 footer img{
     margin-bottom:20px;
+}
+@media screen and (max-width:768px){
+    main{
+        float:none;
+        width: 100%;
+        margin-top:20px;
+    }
+    aside{
+        float:none;
+        width: 100%
+    }
+    article>header img{
+        width: 100%;
+    }
+    .logo{
+        margin-top:20px;
+    }
+    .menuTop li a{
+        padding:20px 25px 
+    }
+}
+@media screen and (max-width:620px){
+    .logo{
+        float:none;
+        display: block;
+        margin: 10px auto;
+    }
+    .menuTop li a{
+        padding:10px 25px 
+    }
+    .menuTop{
+        float:none;
+        width: 100%;
+    }
 }
